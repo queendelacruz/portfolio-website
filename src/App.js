@@ -1,10 +1,8 @@
 import React from 'react';
 
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Projects from './components/Projects.js';
-import Home from './components/Home.js';
-import Experience from './components/Experience.js'
-import './App.css';
+import {Projects, Home, Experience} from './pages';
+import './css/App.css';
 
 function App() {
   
