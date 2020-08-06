@@ -2,14 +2,16 @@ import React from 'react';
 import {Image, Button, Container, Col, Row} from 'react-bootstrap';
 import { AiFillLinkedin, AiFillMail, AiFillGithub} from 'react-icons/ai';
 import {IconContext } from 'react-icons';
+import config from './config.json';
+
 function Home() {
     return (
 
       <div className="App-body ">
-        <Image roundedCircle style={{ width: '10rem' }} src="images/profile.jpg" class="ml-auto rounded-circle"/>
+        <Image roundedCircle style={{ width: '10rem' }} src={config['profile_pic_path']} class="ml-auto rounded-circle"/>
 
-        <h1>Hi! I'm Queen Dela Cruz</h1>
-        <p>Recently graduated with a Bachelor of Science in Software Systems from Simon Fraser University.</p>
+        <h1>Hi! I'm {config['fullname']}</h1>
+        <p>{config['about_me']}</p>
         <Container>
           <Row>
             <Col>
