@@ -1,5 +1,5 @@
 import React from 'react';
-import {CardGroup, CardDeck} from 'react-bootstrap';
+import {CardDeck} from 'react-bootstrap';
 import { ProjectCards } from '../components';
 import data from '../data/data.json';
 

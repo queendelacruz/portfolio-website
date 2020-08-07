@@ -21,7 +21,7 @@ const WillCollapse = ({description, btnlink}) => {
         <Accordion.Collapse eventKey="0">
             <Card.Body>
                 <Card.Text>{description}</Card.Text>
-                <Card.Link href={btnlink}>See more!</Card.Link>
+                <Button href={btnlink}>See more!</Button>
             </Card.Body>
         </Accordion.Collapse>
     );

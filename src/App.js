@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import {Projects, Home, Experience} from './pages';
+import {Projects, Home, Experience, CompilerProject} from './pages';
 import './css/App.css';
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
             <Route path="/home" component={Home}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/experience" component={Experience}/>
+            <Route path="/compiler" component={CompilerProject} />
             {/* <Route path="/projects" component={Projects}/> */}
 
           </Switch>
