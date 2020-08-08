@@ -26,7 +26,7 @@ function Home() {
               <div  className="float-right">
                 <Button href="/projects">Projects</Button>{' '}
                 <Button href="/experience">Experience</Button>{' '}
-                <Button >Resume</Button>
+                <Button href="/resume">Resume</Button>
               </div>
             </Col>
           </Row>
