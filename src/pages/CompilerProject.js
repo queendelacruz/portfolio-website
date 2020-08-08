@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Card, Button,CardDeck} from 'react-bootstrap';
 import Editor from 'react-simple-code-editor';
 import Prism from 'prismjs';
+import {NavigationBar} from '../components';
 
 const CodeEditor = () => {
     const [code, setCode] = useState(
@@ -68,6 +69,8 @@ const CompilerProject = () => {
     
     return (
         <div>
+            <NavigationBar />
+
             <h1>Compiler Project</h1>
             <CardDeck style={{color:"black"}}>
             <CodeEditor></CodeEditor>

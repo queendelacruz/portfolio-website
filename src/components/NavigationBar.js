@@ -1,19 +1,17 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap'
-
+import navbarStyle from '../css/NavigationBar.module.css';
+import data from '../data/data.json';
 
 function NavigationBar(){
     return (
-        <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Name</Navbar.Brand>
+        <Navbar className={navbarStyle.navigationBar + ' fixed-top'} variant='dark' expand="lg">
+        <Navbar.Brand href="/home">{data['fullname']}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link1">Link 1</Nav.Link>
-            <Nav.Link href="#link2">Link 2</Nav.Link>
-        </Nav>
-        <Nav className="ml-auto" >
-            <Nav.Link href="#link3">Contacts</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/resume">Resume</Nav.Link>
         </Nav>
         </Navbar>
     );

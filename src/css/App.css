@@ -1,7 +1,7 @@
 .App {
   background: rgb(75,75,84);
   background: radial-gradient(circle, rgba(75,75,84,1) 5%, rgba(31,30,47,1) 95%);
-  color: peachpuff;
+  color: whitesmoke;
   height: 100vh;
   width: 100vw;
   display: flex;

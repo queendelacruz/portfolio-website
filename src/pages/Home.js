@@ -17,9 +17,9 @@ function Home() {
           <Row>
             <Col>
               <IconContext.Provider value={{className: "rounded-circle ", size: 50, color:"#1f1e2f"}}>
-                <a href="https://www.linkedin.com/in/queen-dela-cruz-867331ab/"> <AiFillLinkedin /></a>
-                <a href="mailto:queenie.dcrz@gmail.com"><AiFillMail /></a>
-                <a href="https://github.com/queendelacruz"><AiFillGithub /></a>
+                <a href={data['linked_in']}> <AiFillLinkedin /></a>
+                <a href={data['mail']}><AiFillMail /></a>
+                <a href={data['github']}><AiFillGithub /></a>
               </IconContext.Provider>
             </Col>
             <Col>
